@@ -8,6 +8,7 @@
 package com.realtime._a1;
 
 import static com.realtime._a1.CountOfJavaFiles.getCountOfJavaFiles;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -24,10 +25,10 @@ public class Ass1 {
     }
 
     public String getFilePath() {
-       
-        Directory = System.getProperty("user.dir")+ "\\" + "javafile";
-        System.out.println(Directory);
-        
+
+        Directory = System.getProperty("user.dir") + File.separator + "javafile";
+        //System.out.println(Directory);
+
         return Directory;
     }
 }
